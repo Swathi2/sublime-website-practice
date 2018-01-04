@@ -1,166 +1,206 @@
-﻿body {
-  font-family: "Lato", Arial, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  color: #555;
-  font-size: 14px;
-  min-width: 480px;
+body {
+    font-family: "Lato", Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    font-size: 14px;
+    min-width: 480px;
 }
-.anchor-text{
+
+.anchor-text {
     color: #6690cc;
     cursor: pointer;
     text-decoration: underline;
 }
+
 .header {
-  background-color: rgba(32, 32, 32, 0.8);
-  padding: 12px 0px;
-  display: table; 
-  width: 100%;
+    background-color: rgba(32, 32, 32, 0.8);
+    padding: 12px 0px;
+    display: table;
+    width: 100%;
 }
 
-.header img {
-   width: 180px;
-}
+    .header img {
+        width: 180px;
+    }
+
 .right-nav li {
-  color: #fff;
-  list-style-type: none;
-  display: inline-block;
-  padding-left: 30px;
-  cursor: pointer;
-  outline: none;
+    color: #fff;
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 30px;
+    cursor: pointer;
+    outline: none;
 }
 
 .heading {
-  padding-top: 30px;
-  background-color: #a9c4c7;
+    padding-top: 30px;
+    background-color: #a9c4c7;
 }
 
 .heading-text {
-  font-size: 32px;
-  color: rgb(254, 254, 254);
-  background-color: rgba(0, 0, 0, 0.1);
+    font-size: 32px;
+    color: rgb(254, 254, 254);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .downloadBtn {
-  background-color: #888;
-  border-radius: 3px;
-  padding: 8px 15px;
-  letter-spacing: 0.5px;
-  display: inline-block;
+    background-color: #888;
+    border-radius: 3px;
+    padding: 8px 15px;
+    letter-spacing: 0.5px;
+    display: inline-block;
 }
 
 .dwnldtxt li {
-  list-style-type: none;
-  display: inline-block;
-  padding-left: 20px;
-  color: #fff;
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 20px;
+    color: #fff;
 }
 
 .dwnldtxt {
-  padding-top: 15px;
+    padding-top: 15px;
 }
 
 .features {
-  font-size: 25px;
-  padding: 2px 10px 3px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 3px;
-  color: rgb(119, 119, 119);
+    font-size: 25px;
+    padding: 2px 10px 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: rgb(119, 119, 119);
 }
 
 h4 { /* dont write directly css for tags */
-  font-size: 1.2em;
-  color: #777;
-  letter-spacing: 0.5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    font-size: 1.2em;
+    color: #777;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 kbd {
-  background-color: #f3f3f3;
-  color: #555;
+    background-color: #f3f3f3;
+    color: #555;
 }
 
 .footer-bg {
-  background-color: #eee;
-  height: 150px;
-  margin-top: 90px;
-  position: relative;
+    background-color: #eee;
+    height: 150px;
+    margin-top: 90px;
+    position: relative;
 }
 
 .footer-img {
-  width: 220px;
+    width: 220px;
 }
 
 .backgrnd-hdng {
-    color:#666;
+    color: #666;
 }
 /**Css styles for buy page*/
 .main-div {
-    padding-left:30px;
-    padding-top:20px;
+    padding-left: 30px;
+    padding-top: 20px;
 }
+
 .buyInrTxt {
-    padding-left:10px;
-    padding-top:10px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
+
 .licenseBox {
-border:1px solid #ddd;
-padding:10px 10px;
+    border: 1px solid #ddd;
+    padding: 10px 10px;
 }
+
 .inptFldPadng {
-    padding-bottom:3px;
+    padding-bottom: 3px;
 }
+
 .inputBox-Styling {
-    height:25px;
-    width:220px;
-    border-radius:1px;
+    height: 25px;
+    width: 220px;
+    border-radius: 1px;
     border: 1px solid #ddd;
 }
+
 .license-text {
-    font-size: 16px;
+    font-size: 18px;
     color: #777;
+    padding-left: 5px;
 }
+
 .radiobtns {
-    padding:10px 10px;
+    padding: 10px 10px;
 }
-.buttons-styling{
+.licenseKey {
+padding-right:140px;
+color: #777;font-size:0.85em;
+}
+.buttons-styling {
     background-color: #A8B3C2;
     margin-right: 0.5em;
     letter-spacing: 0.5px;
     border-radius: 3px;
     color: #fff;
-    font-family:bold;
-    padding: 8px 15px;
+    font-family: bold;
+    padding: 5px 10px;
     border: none;
     display: inline-block;
     font-size: 16px;
 }
+.nopadding {
+    padding:0px;
+}
+.bsnslicenseTxt {
+    padding-left:29px;
+}
+.license-prices {
+    padding-left:5px;
+}
+.licenseprices-list {
+line-height:25px;
+}
+.license-steper {
+width:50px;
+}
 /*Styles for news module*/
-.adaptive-theme {
+.devBuild-text {
+    padding:20px;
     border-top:1px solid #ddd;
-    padding:20px 5px;
 }
+.adaptive-theme {
+    border-top: 1px solid #ddd;
+    padding: 20px 5px;
+}
+
 .news-heading {
-padding-bottom:10px;
+    padding-bottom: 10px;
 }
+
 .img-nopadding {
-    padding:10px 0px;
+    padding: 10px 0px;
 }
+
 .thmeTxtSize {
-    font-size:12px;
+    font-size: 12px;
 }
+
 .listItms {
-    padding-left:20px;
+    padding-left: 20px;
 }
-.listItms li {
-    line-height:25px;
-}
+
+    .listItms li {
+        line-height: 25px;
+    }
+
 .subscribe-text {
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
+
 .right-div {
-    padding-top:50px;
+    padding-top: 50px;
 }
 /**stylings for support module*/
 .documentation-heading {
@@ -169,22 +209,25 @@ padding-bottom:10px;
     font-weight: normal;
     margin-top: 1em;
     margin-bottom: 0.4em;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 /**styles for forum module*/
 .right-list li {
     list-style-type: none;
     display: inline-block;
 }
+
 .right-list {
-   padding-right:80px;
+    padding-right: 80px;
 }
+
 .btn-styling {
     font-size: 0.857em;
     line-height: 12px;
-   border-radius:0px;
-   background: #08c;
+    border-radius: 0px;
+    background: #08c;
 }
+
 .search-icon {
     width: 32px;
     height: 32px;
@@ -193,31 +236,35 @@ padding-bottom:10px;
     display: inline-block;
     color: #c4c4c4;
     cursor: pointer;
-    vertical-align:middle;
-}
-.search-icon:hover {
-background-color:#c4c4c4;
-color: #222;
+    vertical-align: middle;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
-  .right-nav li {
-    padding-top: 15px;
-    padding-left: 30px;
+    .search-icon:hover {
+        background-color: #c4c4c4;
+        color: #222;
     }
-  .right-nav {
-       text-align:inherit;
-  
-  }
-  .main-div {
-    padding-left:0px;
-    padding-top:20px;
-}
- body {
-     font-family: "Lato", Arial, sans-serif;
-    font-size: 18px;
-  }
- .news-heading {
-padding-left:0px;
- }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+    .right-nav li {
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+
+    .right-nav {
+        text-align: inherit;
+    }
+
+    .main-div {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    body {
+        font-family: "Lato", Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .news-heading {
+        padding-left: 0px;
+    }
 }
