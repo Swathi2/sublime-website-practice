@@ -1,4 +1,4 @@
-﻿<div class="container">
+<div class="container">
     <div class="main-div">
         <span class="heading-text backgrnd-hdng">&nbspBuy&nbsp</span>
         <div class="buyInrTxt">
@@ -8,43 +8,51 @@
                 <p class="license-text">LICENSE INFO</p>
                 <div class="inptFldPadng col-xs-12">
                     <span class="col-xs-3">Email*</span>
-                    <span><input class="col-xs-9 inputBox-Styling " type="text" /></span>
+                    <span><input class="col-xs-9 inputBox-Styling " type="text" autofocus /></span>
                 </div>
                 <div class="inptFldPadng col-xs-12">
-                    <label class="col-xs-3">Name</label>
-                    <input class="col-xs-9 inputBox-Styling " type="text" />
-                    <div>
-                        <p ng-show="licenseKey" class="col-xs-9">This name will appear on the license key</p>
+                    <span class="col-xs-3">Name</span>
+                    <span><input class="col-xs-9 inputBox-Styling " type="text" /></span>
+                    <div class="col-xs-3">&nbsp</div>
+                    <div class="col-xs-9 nopadding">
+                        <span ng-show="licenseKey" class="licenseKey nopadding"><i>This name will appear on the license key</i></span>
                     </div>
                 </div>
                 <div class="radiobtns col-xs-12" ng-init="license=1">
-                    <input type="radio" ng-model="license" value="1" ng-click="selfLicenseFunc()" /><span class="radiobtns">This license is for me</span><br />
-                    <input type="radio" ng-model="license" value="2" ng-click="bsnssLicenseFunc()" /><span class="radiobtns">The license is for the business:</span>
-                </div>
-
-                <div ng-if="hidelicenses">
-                    <p><i>QUANTITY</i></p>
-                    <p><i>Number of licenses:</i></p>
-                    <p><i>1 license: USD $80</i></p>
-                    <p><i>10+ licenses: USD $70 / license</i></p>
-                    <p><i>25+ licenses: USD $65 / license</i></p>
-                    <p><i>50+ licenses: USD $60 / license</i></p>
-                </div>
-                <div>
-                    <p class="license-text">TOTAL: USD $80</p>
-                    <button class="buttons-styling">PAY WITH CARD</button>
-                    <button class="buttons-styling">PAY WITH PAYPAL</button>
+                    <div class="col-xs-12"><input type="radio" ng-model="license" value="1" ng-click="selfLicenseFunc()" /><span class="radiobtns">This license is for me</span><br /></div>
+                    <div class="col-xs-12">
+                        <input type="radio" ng-model="license" value="2" ng-click="bsnssLicenseFunc()" /><span class="radiobtns">The license is for the business:</span>
+                    </div>
+                    <div class="col-xs-12">
+                        <span class="col-xs-2">&nbsp</span>
+                        <span class="col-xs-10 bsnslicenseTxt"><input type="text" class="inputBox-Styling" ng-disabled="disabled" ng-focus="bsnssLicenseFunc()" /><br /><span ng-if="hidelicenses"  class="licenseKey nopadding"><i>This name will appear on the license key</i></span></span>
+                    </div>
+                    <div ng-if="hidelicenses">
+                        <p class="license-text">QUANTITY</p>
+                        <p class="license-prices"><span>Number of licenses:</span>&nbsp<span><input type="number" name="points" step="1" class="license-steper text-center" value="1"></span></p>
+                        <p class="text-center licenseKey licenseprices-list">
+                            <i>
+                                1 license: USD $80<br />
+                                10+ licenses: USD $70 / license<br />
+                                25+ licenses: USD $65 / license<br />
+                                50+ licenses: USD $60 / license
+                            </i>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="license-text">TOTAL: USD $80</p>
+                        <button class="buttons-styling">PAY WITH CARD</button>
+                        <button class="buttons-styling">PAY WITH PAYPAL</button>
+                    </div>
                 </div>
             </div>
+            <div class="col-xs-12 radiobtns">
+                <p>Questions? See the <a class="anchor-text">Frequently Asked Questions</a></p>
+                <p class="licenseKey"><i>License Keys are issued by Sublime HQ Pty Ltd, ABN 48 153 193 661, and covered by the <a class="anchor-text">End User License Agreement</a>. Sublime HQ Pty Ltd is <br />located in Sydney, Australia.</i></p>
+                <p class="licenseKey"><i>*Your email address is only used for retrieving lost licenses, and is not shared with any third parties.</i></p>
+            </div>
 
-
-        </div>
-        <div class="col-xs-12 radiobtns">
-            <p>Questions? See the <a class="anchor-text">Frequently Asked Questions</a></p>
-            <p><i>License Keys are issued by Sublime HQ Pty Ltd, ABN 48 153 193 661, and covered by the <a class="anchor-text">End User License Agreement</a>. Sublime HQ Pty Ltd is <br />located in Sydney, Australia.</i></p>
-            <p><i>*Your email address is only used for retrieving lost licenses, and is not shared with any third parties.</i></p>
         </div>
 
     </div>
-
 </div>
