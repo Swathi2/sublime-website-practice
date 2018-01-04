@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sublime text editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body ng-app="sublimeApp">
+    <header class="header" ng-controller="headerCtrl as header">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6" style="top:5px;">
+                <img src="https://www.sublimetext.com/images/logo.svg" alt="sublimetext" ng-click="header.navigate('home')">
+            </div>
+            <ul class="right-nav text-right col-xs-12 col-sm-6" style="top:5px;">
+                <li ng-click="header.navigate('download')" style="padding-left:0px;">Download</li>
+                <li ng-click="header.navigate('buy')">Buy</li>
+                <li ng-click="header.navigate('news')">News</li>
+                <li ng-click="header.navigate('forum')">Forum</li>
+                <li ng-click="header.navigate('support')">Support</li>
+            </ul>
+        </div>
+    </header>
+    <div ng-view=""></div>
+    <footer class="footer footer-bg">
+        <div class="container">
+            <p style="padding-top:20px;">&copy Sublime HQ Pty Ltd</p>
+            <div style="float:right">
+                <p style="position:absolute;top:-108px;
+               "><img src="https://www.sublimetext.com/images/icon_grey_top.svg" class="footer-img"></p>
+                <p style="margin-top:-50px;">
+                    <img src="https://www.sublimetext.com/images/icon_grey_bottom.svg" class="footer-img">
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-cookies.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-touch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-aria.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-messages.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.5/angular-material.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/downloadCtrl.js"></script>
+    <script src="scripts/homeCtrl.js"></script>
+    <script src="scripts/headerCtrl.js"></script>
+    <script src="scripts/buyCtrl.js"></script>
+    <script src="scripts/newsCtrl.js"></script>
+    <script src="scripts/forumCtrl.js"></script>
+    <script src="scripts/supportCtrl.js"></script>
+</body>
+</html>
